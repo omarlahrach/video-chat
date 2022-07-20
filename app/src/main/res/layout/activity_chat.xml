@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/local_camera"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_15sdp"
+            app:layout_constraintBottom_toTopOf="@id/controls"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/remote_cameras"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_background"
+            android:backgroundTint="?attr/colorSurface"
+            android:layout_margin="@dimen/_2sdp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/mic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_background"
+                android:clickable="true"
+                android:contentDescription="@string/mic_control"
+                android:focusable="true"
+                android:padding="@dimen/_10sdp"
+                android:backgroundTint="?attr/colorPrimary"
+                app:srcCompat="@drawable/ic_baseline_mic_24" />
+
+            <ImageView
+                android:id="@+id/video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_background"
+                android:clickable="true"
+                android:contentDescription="@string/video_control"
+                android:focusable="true"
+                android:padding="@dimen/_10sdp"
+                android:backgroundTint="?attr/colorPrimary"
+                app:srcCompat="@drawable/ic_baseline_videocam_24" />
+
+            <ImageView
+                android:id="@+id/end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_background"
+                android:clickable="true"
+                android:contentDescription="@string/call_control"
+                android:focusable="true"
+                android:padding="@dimen/_10sdp"
+                android:backgroundTint="@color/red"
+                app:srcCompat="@drawable/ic_baseline_call_end_24" />
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="?attr/colorPrimary"
+                android:clickable="true"
+                android:contentDescription="@string/camera_control"
+                android:focusable="true"
+                android:padding="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_baseline_cameraswitch_24" />
+
+            <ImageView
+                android:id="@+id/audio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_background"
+                android:clickable="true"
+                android:contentDescription="@string/audio_control"
+                android:focusable="true"
+                android:padding="@dimen/_10sdp"
+                android:backgroundTint="?attr/colorPrimary"
+                app:srcCompat="@drawable/ic_baseline_hearing_24" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

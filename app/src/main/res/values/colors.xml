@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- light colors -->
+    <color name="light_colorPrimary">#7986CB</color>
+    <color name="light_colorOnPrimary">#FFFFFFFF</color>
+    <color name="light_colorPrimaryVariant">#5C6BC0</color>
+    <color name="light_colorSecondary">#FFAB91</color>
+    <color name="light_colorOnSecondary">#271F39</color>
+    <color name="light_colorSecondaryVariant">#F4511E</color>
+    <color name="light_colorBackground">#FFFFFF</color>
+    <color name="light_colorSurface">#E8EAF6</color>
+    <!--dark colors -->
+    <color name="dark_colorPrimary">#5C6BC0</color>
+    <color name="dark_colorOnPrimary">#FFFFFF</color>
+    <color name="dark_colorPrimaryVariant">#9FA8DA</color>
+    <color name="dark_colorSecondary">#FFAB91</color>
+    <color name="dark_colorOnSecondary">#271F39</color>
+    <color name="dark_colorSecondaryVariant">#F4511E</color>
+    <color name="dark_colorBackground">#271F39</color>
+    <color name="dark_colorSurface">#1F162E</color>
+    <!-- common colors -->
+    <color name="red">#E57373</color>
+    <color name="pink">#F06292</color>
+    <color name="magenta">#BA68C8</color>
+    <color name="purple">#9575CD</color>
+    <color name="blue">#7986CB</color>
+    <color name="cyan">#64B5F6</color>
+    <color name="green">#4DB6AC</color>
+    <color name="amber">#FFB74D</color>
+    <color name="orange">#FF8A65</color>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Chat" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/dark_colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/dark_colorOnPrimary</item>
+        <item name="android:colorBackground">@color/dark_colorBackground</item>
+        <item name="colorSurface">@color/dark_colorSurface</item>
+        <item name="colorOnSurface">@color/dark_colorOnPrimary</item>
+        <item name="colorSurfaceVariant">@color/dark_colorBackground</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/dark_colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/dark_colorOnSecondary</item>
+        <!-- Custom components -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

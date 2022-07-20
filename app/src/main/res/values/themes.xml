@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Chat" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/light_colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/light_colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/light_colorOnPrimary</item>
+        <item name="android:colorBackground">@color/light_colorBackground</item>
+        <item name="colorSurface">@color/light_colorSurface</item>
+        <item name="colorOnSurface">@color/light_colorOnSecondary</item>
+        <item name="colorSurfaceVariant">@color/light_colorBackground</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/light_colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/light_colorOnSecondary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="FabThemeStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FabTheme</item>
+    </style>
+
+    <style name="FabTheme" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">0dp</item>
+        <item name="cornerSizeBottomLeft">@dimen/_50sdp</item>
+        <item name="cornerFamily">cut</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+    </style>
+</resources>

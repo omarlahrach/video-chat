@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="audio_control">audio optionsViewModel</string>
+    <string name="camera_control">camera optionsViewModel</string>
+    <string name="call_control">call optionsViewModel</string>
+    <string name="video_control">video optionsViewModel</string>
+    <string name="mic_control">mic optionsViewModel</string>
+    <string name="start_game">Commencer le jeu</string>
+    <string name="chat">Activer Chat ?</string>
+</resources>
